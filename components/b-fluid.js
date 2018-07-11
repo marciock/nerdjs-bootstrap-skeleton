@@ -1,16 +1,17 @@
-import {Creator} from '../dist/nerdcreator';
+import {Generator} from '../dist/nerdcreator';
 
-export class BFluid extends Creator{
+export class BFluid extends Generator{
 
-    render(){
-        return(
-            `<div class="container-fluid">
-                ${
-                    this.innerHTML
-                }
-             </div>
-            `
-        )
+    create(){
+        let div=document.createElement('div');
+      //  div.className.add('container');
+        div.classList.add('container-fluid');
+        console.log(div.classList);
+        div.innerHTML=this.innerHTML;
+        this.innerHTML="";
+        this.appendChild(div);
+        
+
     }
 }
 

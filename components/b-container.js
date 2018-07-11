@@ -8,7 +8,7 @@ export class BContainer extends Generator{
         let div=document.createElement('div');
       //  div.className.add('container');
         div.classList.add('container');
-        console.log(div.classList);
+   
         div.innerHTML=this.innerHTML;
         this.innerHTML="";
         this.appendChild(div);

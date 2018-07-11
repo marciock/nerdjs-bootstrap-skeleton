@@ -3,9 +3,8 @@ import '@webcomponents/custom-elements';
 
 import {Creator} from '../dist/nerdcreator';
 import BContainer  from '../components/b-container';
+import BButtonOutline from '../components/b-button-outline';
 import BRow from '../components/b-row';
-import BCol from '../components/b-col';
-
 
 export class Apps extends Creator{
 
@@ -15,15 +14,15 @@ export class Apps extends Creator{
   
     return (
       `<div>
+        <style> img{
+          width:10%;
+          height:10%;
+        }
+        </style>
         <b-container>
-          <b-row>
-            <b-col>
-            <h1>teste</h1>
-            </b-col>
-            <b-col>
-            <h1>teste</h1>
-            </b-col>
-          </b-row>
+          
+           <b-btn-otl type="danger">TEste</b-btn-otl>
+         
         </b-container>
         
       </div>`
