@@ -3,10 +3,22 @@ import {Generator}  from '../dist/nerdcreator';
 export class BCol extends Generator{
 
     create(){
-        let div=document.createElement('div');
+        const div=document.createElement('div');
+
+        const n=this.getProps('n');
+        let nArray=new Array();
 
         div.classList.add('col');
-        console.log(div.classList);
+
+        if(n !==null){
+
+            nArray=n.split(' ');
+            nArray.map((f)=>{
+                div.classList.add(f);
+            })
+            
+        }
+        
         div.innerHTML=this.innerHTML;
         this.innerHTML="";
         this.appendChild(div);

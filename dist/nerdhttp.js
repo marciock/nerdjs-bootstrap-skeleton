@@ -65,7 +65,7 @@ push(data){
             
         let elems=document.getElementById(f.id).value;
 
-        console.log(elems);
+      //  console.log(elems);
        formData.append(f.name,elems);
         
     })
