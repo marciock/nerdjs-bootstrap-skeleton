@@ -5,7 +5,8 @@ import {Creator} from '../dist/nerdcreator';
 import BContainer  from '../components/b-container';
 
 import BRow from '../components/b-row';
-import BCardImage from '../components/b-card-image';
+
+import {BButtom} from '../components/b-buttons';
 
 export class Apps extends Creator{
 
@@ -14,17 +15,11 @@ export class Apps extends Creator{
     
   
     return (
-      `<div>
-        <style> img{
-          width:10%;
-          height:10%;
-        }
-        </style>
+      `
         <b-container>
           
-        <b-card-img src="./img/img1.jpg" alt="teste">
-        Some quick example text to build on the card title and make up the bulk of the card's conten
-        </b-card-img>
+        
+        <b-btn type="warning">Tapita</b-btn>
          
         </b-container>
         

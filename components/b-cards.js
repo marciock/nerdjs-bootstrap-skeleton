@@ -93,7 +93,7 @@ export class BCardText extends Generator{
 
 customElements.define('b-card-text',BCardText);
 
-export class BCardImage extends Generator{
+/*export class BCardImage extends Generator{
 
     create(){
 
@@ -128,3 +128,4 @@ export class BCardImage extends Generator{
     }
 }
 customElements.define('b-card-img',BCardImage);
+*/
